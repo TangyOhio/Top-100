@@ -9,7 +9,7 @@ class SongForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addSong(this.state.name)
+    this.props.addSong(this.state.name, Math.random() * 1000)
     this.setState({ name: '' })
   }
 

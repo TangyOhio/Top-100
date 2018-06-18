@@ -34,7 +34,7 @@ class App extends Component {
       .then(song => {
         let songs = this.state.songs.map(t => {
           if (t.id === id)
-            return song
+            return {t, place: (Math.random() * 1000)}
           return t
         })
 
